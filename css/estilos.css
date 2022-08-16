@@ -1,0 +1,353 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fuentes desde google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300;400&display=swap');
+
+/* estilo del header */
+.row-flex{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    
+}
+
+.nav-flex{
+    list-style: none;
+    align-items: center;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.navflex-item {
+    display: inline-block;
+    padding: 35px 30px;
+
+}
+
+
+.nav-flex .navflex-item {
+    display: inline-block;
+}
+
+
+.nav-flex a {
+
+    color:black;
+    text-decoration: none;
+    text-shadow: .2px .5px 1px gray;
+}
+
+#link-ingresar{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-shadow: .5px .5px 1px black;
+}
+
+#boton-ingresar{
+    background-color: rgb(106, 44, 250);
+    border-radius: 100px;
+    height: 50px;
+    width: 150px;
+    margin-left: 50px;
+    box-shadow: .2px .5px 2px;
+    border-style: none;
+}
+
+
+
+.menu-line{
+    display: none;
+}
+
+.row-flex{
+    display: flex;
+    justify-content: space-between;
+}
+/* menu mobile */
+
+@media all and (max-width: 600px) {
+
+    #boton-ingresar{
+        display: none;
+    }
+
+    .nav-flex{
+        flex-direction: column;
+        display:flex;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .navflex-item{
+        border-bottom: 1px black solid;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+
+    #icono{
+        height: 100px;
+    }
+
+
+    .menu-line{
+        display: block;
+        background-color: black;
+        width: 20px;
+        height: 2px;
+        margin-bottom: 4px;
+        margin-left: 50px;
+    }
+    
+    .menu{
+        margin-top: 50px;
+        margin-left: 100px;
+
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+
+    }
+
+    .imagen-index{
+        height: 200px;
+    }
+
+
+}
+
+/* estilo de los títulos y subtítulos */
+h1{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 70px;
+    margin: 50px;
+    font-size: 46px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: darkslategray;
+    display: flex;
+    margin: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    justify-content: center;
+
+
+
+}
+
+h3{
+    font-family: 'PT Sans', sans-serif;
+    margin: 30px;
+    font-weight: lighter;
+    color: grey;
+    font-size: 16px;    
+}
+
+
+/* estilo de index */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    margin-top: 50px;
+}
+
+.grid-footer{
+    padding-top:20%;
+
+}
+#boton-comienza-ahora{
+    background-color: orange;
+    border-radius: 100px;
+    margin-left: 60px;
+    height: 100px;
+    width: 320px;
+    box-shadow: 1px 2px 8px;
+    border-style: none;
+}
+
+#link-comienza-ahora{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: .2px .2px 1.5px white;
+
+}
+
+
+/* estilos registro */
+
+#boton-registrarme{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 100px;
+    color: white;
+    background-color: orange;
+    height: 80px;
+    width: 270px;
+
+}
+
+
+
+#link-inicia-sesion{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+
+
+}
+
+#boton-inicia-sesion{
+    background-color: rgb(106, 44, 250);
+    border-radius: 110px;
+    height: 50px;
+    width: 150px;
+}
+
+/* index mobile */
+
+
+/* estilos contacto */
+
+
+#boton-enviar{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    border-radius: 100px;
+    color: white;
+    background-color: orange;
+    position: absolute;
+    left: 5%;
+    height: 40px;
+    width: 130px;
+}
+
+/* estilos formularios */
+
+.form{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.fieldset{
+    border-style: none;
+    margin-left: 50px;
+    
+}
+
+.input {
+    width: 15em;
+    }
+
+
+
+form div{
+    margin: 20px;
+}
+
+/* estilos iniciar sesion */
+
+#iniciar-sesion{
+    position: absolute;
+    right: 45%;
+    font-weight: bold;
+}
+
+#enviar-iniciar-sesion{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(106, 44, 250);
+    border-radius: 110px;
+    height: 50px;
+    width: 150px;
+}
+
+#titulo-iniciar-sesion{
+    margin-right: 5%;
+    text-align: center;
+}
+    
+
+p{
+    margin: 30px;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+
+/* estilos paquetes */
+.imagen-paquetes{
+    height: 300px;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    margin: 20px;
+}
+
+.caja-paquete1{
+    border: orange solid 10px;
+    height: 300px;
+}
+
+.caja-paquete2{
+    border: rgb(106, 44, 250) solid 10px;
+    height: 300px;
+
+}
+
+.premium{
+    text-shadow: 1px 1px 10px rgb(106, 44, 250);
+    font-weight: 700;
+    color: blueviolet;
+    font-size: 22px;
+}
+
+.gratuito{
+    font-weight: bold;
+}
+
+.internacionales{
+    font-weight: bold;
+}
+
+/* mobile paquetes */
+
+@media all and (max-width: 600px) {
+    .grid-wrapper{
+        grid-template-columns: 400px;
+    }
+
+    .caja-paquete1{
+        margin-left: 60px;
+    }
+
+    .caja-paquete2{
+        margin-left: 60px;
+    }
+}
