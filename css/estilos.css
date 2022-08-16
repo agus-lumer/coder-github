@@ -33,6 +33,9 @@
 
 }
 
+.nav-flex a:hover{
+    color: rgb(106, 44, 250);
+}
 
 .nav-flex .navflex-item {
     display: inline-block;
