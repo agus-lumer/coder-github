@@ -27,13 +27,13 @@
 
 }
 
-.navflex-item {
+.nav-item {
     display: inline-block;
     padding: 35px 30px;
 
 }
 
-.nav-flex a:hover{
+.nav-item a:hover{
     color: rgb(106, 44, 250);
 }
 
@@ -67,7 +67,9 @@
     border-style: none;
 }
 
-
+a:link {
+    text-decoration: none;
+  }
 
 .menu-line{
     display: none;
@@ -82,7 +84,7 @@
 @media all and (max-width: 600px) {
 
     #boton-ingresar{
-        display: none;
+        margin-left: 10px;
     }
 
     .nav-flex{
@@ -134,7 +136,7 @@
 /* estilo de los títulos y subtítulos */
 h1{
     font-family: 'Roboto', sans-serif;
-    margin-top: 70px;
+    margin-top: 150px;
     margin: 50px;
     font-size: 46px;
 }
@@ -164,12 +166,6 @@ h3{
 
 /* estilo de index */
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 500px 500px;
-    margin-top: 50px;
-}
-
 .grid-footer{
     padding-top:20%;
 
@@ -178,6 +174,7 @@ h3{
     background-color: orange;
     border-radius: 100px;
     margin-left: 60px;
+    margin-top: 20px;
     height: 100px;
     width: 320px;
     box-shadow: 1px 2px 8px;
@@ -240,10 +237,13 @@ h3{
     border-radius: 100px;
     color: white;
     background-color: orange;
-    position: absolute;
-    left: 5%;
     height: 40px;
     width: 130px;
+    margin-left: 100px;
+}
+
+.imagen-contacto{
+    height: 460px;
 }
 
 /* estilos formularios */
@@ -289,8 +289,13 @@ form div{
 }
 
 #titulo-iniciar-sesion{
-    margin-right: 5%;
+    margin-right: 8%;
     text-align: center;
+}
+
+.footer-iniciar-sesion{
+    position: absolute;
+    top: 90%;
 }
     
 
@@ -354,3 +359,4 @@ p{
         margin-left: 60px;
     }
 }
+
