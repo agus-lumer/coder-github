@@ -1,0 +1,66 @@
+@import "utilities/variables";
+
+
+header{
+    background-color: $color-principal;
+    nav{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        .nav-flex a {
+
+            color:black;
+            text-decoration: none;
+            text-shadow: .2px .5px 1px $color-secundario1;
+        }
+       ul{
+           li{
+                list-style:none;
+                align-items: center;
+                font-family: $fuente-principal;
+                font-size: 20px;
+                font-weight: bold;
+                display: inline-block;
+                padding: 35px 30px;
+                
+            }
+        }
+    }
+}
+
+main{
+    h1{
+        font-family: $fuente-principal;
+        margin-top: 70px;
+        margin: 50px;
+        font-size: 46px;
+    section{
+        article{
+            form{
+                font-family: $fuente-principal;
+                font-size: 20px;
+                fieldset{
+                    border-style: none;
+                    margin-left: 50px;
+                    input{
+                        width: 15em;
+                    }
+                }
+            div{
+                margin: 20px;
+                #boton-registrarme{
+                    font-family: $fuente-principal;
+                    font-weight: 600;
+                    font-size: 30px;
+                    border-radius: 100px;
+                    color: $color-principal;
+                    background-color: $color-secundario2;
+                    height: 80px;
+                    width: 270px;
+                 }
+            }
+         }
+    }
+    }
+    }
+}
