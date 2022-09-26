@@ -26,13 +26,26 @@ body{
 
 .nav-item {
     display: inline-block;
-    padding: 35px 30px;
+    padding: 35px 30px; 
+    transition-duration: 1.2s;
+
+
+}
+
+.nav-item:hover{
+    
+    color: rgb(106, 44, 250);
+    font-size: 18px;
+    background-color:gainsboro;
 
 }
 
 .nav-item a:hover{
     color: rgb(106, 44, 250);
+
 }
+
+
 
 .nav-flex .navflex-item {
     display: inline-block;
@@ -78,7 +91,7 @@ a:link {
 }
 /* menu mobile */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
 
     #boton-ingresar{
         margin-left: 10px;
@@ -98,9 +111,15 @@ a:link {
     }
 
 
-    #icono{
+    .icono{
         height: 100px;
+        transition-duration: 3s;
     }
+    .icono:hover{
+        height: 110px;
+    }
+
+
 
 
     .menu-line{
@@ -124,7 +143,23 @@ a:link {
     }
 
     .imagen-index{
-        height: 200px;
+        height: $tamaño-imagenes-responsive;
+    }
+
+    .imagen-contacto{
+    
+       width: 480px;
+    }
+
+    .imagen-registro{
+        height: $tamaño-imagenes-responsive;
+        margin-left: 150px;
+        
+    }
+
+    .imagen-about{
+        height: $tamaño-imagenes-responsive;
+        margin-left: 150px;
     }
 
 
@@ -143,10 +178,11 @@ h2{
     color: darkslategray;
     display: flex;
     margin: 50px;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 100;
     text-align: left;
     justify-content: center;
+    padding: 50px;
 
 
 
@@ -167,7 +203,7 @@ h3{
     padding-top:20%;
 
 }
-#boton-comienza-ahora{
+.boton-comienza-ahora{
     background-color: orange;
     border-radius: 100px;
     margin-left: 60px;
@@ -176,7 +212,17 @@ h3{
     width: 320px;
     box-shadow: 1px 2px 8px;
     border-style: none;
+    transition-duration: 2s;
+    
 }
+
+.boton-comienza-ahora:hover{
+    background-color: $color-secundario1;
+    height: 120px;
+    width: 350px;
+
+}
+
 
 #link-comienza-ahora{
     color: white;
@@ -202,7 +248,6 @@ h3{
     width: 270px;
 
 }
-
 
 
 #link-inicia-sesion{
@@ -253,13 +298,19 @@ h3{
 .fieldset{
     border-style: none;
     margin-left: 50px;
+    border-radius: 50px;
     
 }
 
 .input {
     width: 15em;
+    border-radius: 50px;
     }
-
+    
+.input-mensaje {
+    border-radius: 50px;
+    text-align: center;
+}
 
 
 form div{
@@ -308,6 +359,17 @@ p{
 .imagen-paquetes{
     height: 300px;
 }
+
+.imagen-basico{
+    height: 150px;
+    justify-items: center ;
+}
+
+.imagen-premium{
+    height: 150px;
+    justify-items: center;
+    
+}
 .grid-wrapper{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -320,17 +382,31 @@ p{
     height: 300px;
 }
 
+.caja-paquete1:hover{
+    height: 310px;
+    box-shadow: 1px 1px 10px black;
+}
+
 .caja-paquete2{
     border: rgb(106, 44, 250) solid 10px;
     height: 300px;
 
 }
 
+.caja-paquete2:hover{
+    height: 310px;
+    box-shadow: 1px 1px 10px black;
+}
+
 .premium{
-    text-shadow: 1px 1px 10px rgb(106, 44, 250);
+    
     font-weight: 700;
     color: blueviolet;
-    font-size: 22px;
+    font-size: 30px;
+}
+
+.premium:hover{
+    text-shadow: 1px 1px 10px rgb(106, 44, 250);
 }
 
 .gratuito{
